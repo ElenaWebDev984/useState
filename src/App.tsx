@@ -5,7 +5,7 @@ import {OnOff} from "./OnOff/OnOff";
 function App() {
   return (
     <div className="App">
-      <OnOff on={true}/>
+      <OnOff defaultOn={true}/>
     </div>
   );
 }

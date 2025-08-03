@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 type OnOffTypes = {
-    on: boolean
+    defaultOn: boolean
 }
 
-export const OnOff = ({on}: OnOffTypes) => {
+export const OnOff = ({defaultOn}: OnOffTypes) => {
+    const [on, setOn] = useState<OnOffTypes>(false);
+
     const onStyle = {
         width: '30px',
         height: '20px',
@@ -33,13 +35,12 @@ export const OnOff = ({on}: OnOffTypes) => {
     return (
         <div className='onOff'>
             <div style={onStyle}
-                 onClick={() => {
-                     debugger
-                     on = true
-                 }}>On
+                 onClick={() => {setOn(true)}}>
+                On
             </div>
             <div style={offStyle}
-                 onClick={() => {on = false}}>Off
+                 onClick={() => {setOn(false)}}>
+                Off
             </div>
             <div style={indicatorStyle}></div>
         </div>
