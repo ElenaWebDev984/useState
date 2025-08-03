@@ -6,6 +6,9 @@ function App() {
   return (
     <div className="App">
       <OnOff defaultOn={true}/>
+      <OnOff defaultOn={true}/>
+      <OnOff defaultOn={true}/>
+      <OnOff defaultOn={true}/>
     </div>
   );
 }
