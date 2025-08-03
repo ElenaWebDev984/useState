@@ -5,7 +5,11 @@ type OnOffTypes = {
 }
 
 export const OnOff = ({defaultOn}: OnOffTypes) => {
+    console.log('OnOff rendering')
+
     const [on, setOn] = useState(defaultOn);
+
+    console.log('on: ' + defaultOn)
 
     const onStyle = {
         width: '30px',
