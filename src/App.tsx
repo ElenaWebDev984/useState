@@ -5,10 +5,10 @@ import {OnOff} from "./OnOff/OnOff";
 function App() {
   return (
     <div className="App">
-      <OnOff defaultOn={true}/>
-      <OnOff defaultOn={true}/>
-      <OnOff defaultOn={true}/>
-      <OnOff defaultOn={true}/>
+      <OnOff/>
+      <OnOff/>
+      <OnOff/>
+      <OnOff/>
     </div>
   );
 }

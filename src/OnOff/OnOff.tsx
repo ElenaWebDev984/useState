@@ -1,15 +1,13 @@
 import React, {useState} from 'react';
 
-type OnOffTypes = {
-    defaultOn: boolean
-}
+// type OnOffTypes = {
+    // defaultOn: boolean
+// }
 
-export const OnOff = ({defaultOn}: OnOffTypes) => {
+export const OnOff = () => {
     console.log('OnOff rendering')
 
-    const [on, setOn] = useState(defaultOn);
-
-    console.log('on: ' + defaultOn)
+    const [on, setOn] = useState(false);
 
     const onStyle = {
         width: '30px',
