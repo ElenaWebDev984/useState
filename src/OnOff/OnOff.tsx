@@ -32,8 +32,15 @@ export const OnOff = ({on}: OnOffTypes) => {
 
     return (
         <div className='onOff'>
-            <div style={onStyle}>On</div>
-            <div style={offStyle}>Off</div>
+            <div style={onStyle}
+                 onClick={() => {
+                     debugger
+                     on = true
+                 }}>On
+            </div>
+            <div style={offStyle}
+                 onClick={() => {on = false}}>Off
+            </div>
             <div style={indicatorStyle}></div>
         </div>
     );
